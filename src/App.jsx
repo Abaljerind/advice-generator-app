@@ -18,17 +18,27 @@ function App() {
   document.body.style.backgroundColor = "rgb(31, 38, 50)";
 
   return (
-    <div className="font-manrope relative mx-auto flex h-screen max-w-[345px] flex-col items-center justify-center px-2">
-      <section className="bg-darkGrayishBlue rounded-xl px-1 py-12 text-center">
+    <div className="font-manrope mx-auto flex h-screen max-w-[355px] flex-col items-center justify-center px-2 lg:w-full lg:max-w-[500px]">
+      <section className="bg-darkGrayishBlue rounded-xl px-4 py-12 text-center lg:px-8">
         <p className="text-green mb-6 text-sm tracking-[0.2em]">
           ADVICE #{quoteId}
         </p>
-        <q className="text-cyan text-[24px]/8 font-bold">{quote}</q>
-        <img
-          src="src/assets/pattern-divider-mobile.svg"
-          alt="pattern divider"
-          className="mx-auto mt-8 mb-4 w-[90%]"
-        />
+        <q className="text-cyan text-[24px]/8 font-bold lg:text-[28px]/8">
+          {quote}
+        </q>
+        <picture>
+          {/* Gambar untuk layar besar */}
+          <source
+            srcSet="src/assets/pattern-divider-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          {/* Gambar untuk layar kecil */}
+          <img
+            src="src/assets/pattern-divider-mobile.svg"
+            alt="pattern divider"
+            className="mx-auto mt-8 mb-4 w-[90%] lg:w-full"
+          />
+        </picture>
       </section>
       <button
         className="bg-green hover:shadow-green/50 -mt-8 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full transition duration-300 ease-in-out hover:shadow-xl"

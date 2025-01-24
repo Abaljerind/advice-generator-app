@@ -15,7 +15,7 @@ function App() {
           className="mx-auto mt-8 mb-4 w-[90%]"
         />
       </section>
-      <button className="bg-green -mt-8 flex h-16 w-16 items-center justify-center rounded-full">
+      <button className="bg-green -mt-8 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full transition duration-300 ease-in-out hover:brightness-125">
         <img
           src="src/assets/icon-dice.svg"
           alt="icon dice"

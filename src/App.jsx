@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import PatternDesktop from "./assets/pattern-divider-desktop.svg";
+import PatternMobile from "./assets/pattern-divider-mobile.svg";
+import iconDice from "./assets/icon-dice.svg";
 
 function App() {
   const [quote, setQuote] = useState("");
@@ -28,13 +31,10 @@ function App() {
         </q>
         <picture>
           {/* Gambar untuk layar besar */}
-          <source
-            srcSet="./src/assets/pattern-divider-desktop.svg"
-            media="(min-width: 1024px)"
-          />
+          <source srcSet={PatternDesktop} media="(min-width: 1024px)" />
           {/* Gambar untuk layar kecil */}
           <img
-            src="./src/assets/pattern-divider-mobile.svg"
+            src={PatternMobile}
             alt="pattern divider"
             className="mx-auto mt-8 mb-4 w-[90%] lg:w-full"
           />
@@ -44,11 +44,7 @@ function App() {
         className="bg-green hover:shadow-green/50 -mt-8 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full transition duration-300 ease-in-out hover:shadow-xl"
         onClick={handleGetQuote}
       >
-        <img
-          src="./src/assets/icon-dice.svg"
-          alt="icon dice"
-          className="h-7 w-7"
-        />
+        <img src={iconDice} alt="icon dice" className="h-7 w-7" />
       </button>
     </div>
   );

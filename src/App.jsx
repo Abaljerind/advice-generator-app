@@ -19,11 +19,11 @@ function App() {
 
   return (
     <div className="font-manrope mx-auto flex h-screen max-w-[355px] flex-col items-center justify-center px-2 lg:w-full lg:max-w-[500px]">
-      <section className="bg-darkGrayishBlue rounded-xl px-4 py-12 text-center lg:px-8">
+      <section className="bg-darkGrayishBlue w-full max-w-[500px] min-w-[355px] rounded-xl px-4 py-12 text-center lg:px-8">
         <p className="text-green mb-6 text-sm tracking-[0.2em]">
           ADVICE #{quoteId}
         </p>
-        <q className="text-cyan text-[24px]/8 font-bold lg:text-[28px]/8">
+        <q className="text-cyan text-[24px]/8 font-bold break-words lg:text-[28px]/8">
           {quote}
         </q>
         <picture>

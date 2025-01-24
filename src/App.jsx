@@ -29,12 +29,12 @@ function App() {
         <picture>
           {/* Gambar untuk layar besar */}
           <source
-            srcSet="../public/assets/pattern-divider-desktop.svg"
+            srcSet="src/assets/pattern-divider-desktop.svg"
             media="(min-width: 1024px)"
           />
           {/* Gambar untuk layar kecil */}
           <img
-            src="../public/assets/pattern-divider-mobile.svg"
+            src="src/assets/pattern-divider-mobile.svg"
             alt="pattern divider"
             className="mx-auto mt-8 mb-4 w-[90%] lg:w-full"
           />
@@ -45,7 +45,7 @@ function App() {
         onClick={handleGetQuote}
       >
         <img
-          src="../public/assets/icon-dice.svg"
+          src="src/assets/icon-dice.svg"
           alt="icon dice"
           className="h-7 w-7"
         />

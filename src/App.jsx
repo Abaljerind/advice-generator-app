@@ -2,13 +2,10 @@ function App() {
   document.body.style.backgroundColor = "rgb(31, 38, 50)";
 
   return (
-    <div className="font-manrope relative flex h-screen flex-col items-center justify-center px-2">
+    <div className="font-manrope relative mx-auto flex h-screen w-[345px] flex-col items-center justify-center px-2">
       <section className="bg-darkGrayishBlue rounded-xl px-1 py-12 text-center">
         <p className="text-green mb-6 text-sm tracking-[0.2em]">ADVICE #117</p>
-        <q className="text-cyan text-[28px]/8 font-bold">
-          It is easy to sit up and take notice, what's difficult is getting up
-          and taking action.
-        </q>
+        <q className="text-cyan text-[24px]/8 font-bold">{quote}</q>
         <img
           src="src/assets/pattern-divider-mobile.svg"
           alt="pattern divider"

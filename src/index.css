@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
-* {
-  font-family: "manrope";
+@theme {
+  --font-manrope: manrope;
+
+  --color-cyan: rgb(205, 226, 232);
+  --color-green: rgb(81, 255, 168);
+
+  --color-grayishBlue: rgb(78, 92, 115);
+  --color-darkGrayishBlue: rgb(49, 58, 72);
+  --color-darkBlue: rgb(31, 38, 50);
 }

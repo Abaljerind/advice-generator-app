@@ -27,11 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-- Desktop version.
-  ![](./public/images/screenshot-preview-desktop.png =250x250)
+- Desktop version.  
+  <img src="./public/images/screenshot-preview-desktop.png" alt="Desktop version" width="600"/>
 
-- Mobile version.
-  ![](./public/images/screenshot-preview-mobile.png)
+- Mobile version.  
+  <img src="./public/images/screenshot-preview-mobile.png" alt="Mobile version" width="300"/>
 
 ### Links
 

@@ -28,10 +28,10 @@ Users should be able to:
 ### Screenshot
 
 - Desktop version.
-  ![](./public/images/screenshot-preview-desktop.png | width=100)
+  ![](./public/images/screenshot-preview-desktop.png =250x250)
 
 - Mobile version.
-  ![](./public/images/screenshot-preview-mobile.png | width=100)
+  ![](./public/images/screenshot-preview-mobile.png)
 
 ### Links
 

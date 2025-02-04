@@ -8,10 +8,21 @@ function App() {
   const [quoteId, setQuoteId] = useState(null);
 
   async function handleGetQuote() {
-    const res = await fetch("https://api.adviceslip.com/advice");
-    const data = await res.json();
-    setQuote(data.slip.advice);
-    setQuoteId(data.slip.id);
+    try {
+      const res = await fetch("https://api.adviceslip.com/advice");
+
+      if (!res.ok) {
+        throw new Error(`Oops, something went wrong. Status: ${res.status}`);
+      }
+      const data = await res.json();
+      setQuote(data.slip.advice);
+      setQuoteId(data.slip.id);
+    } catch (error) {
+      console.error("An error occured while fetching the quote:", error); // can be removed in production
+      alert(
+        "Sorry, we couldn't fetch a quote at this time. Please try again later.",
+      );
+    }
   }
 
   useEffect(() => {
